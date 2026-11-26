@@ -1,0 +1,33 @@
+[
+  {
+    "faculty_id": "FAC-001",
+    "name": "Prof. Administrator",
+    "username": "faculty",
+    "mobile": "9876543210",
+    "email": "faculty@college.edu",
+    "password": "admin123",
+    "role": "Faculty Administrator"
+  },
+  {
+    "faculty_id": "FAC-5A12FD",
+    "name": "shikha sharma",
+    "username": "shikha_01",
+    "mobile": "9911583182",
+    "email": "shikhasharmaj2005@gmail.com",
+    "password": "Shikha@12",
+    "role": "Faculty Administrator",
+    "mobile_verified": true,
+    "created_at": "2026-11-25T15:41:02.761976"
+  },
+  {
+    "faculty_id": "FAC-842BBA",
+    "name": "Abhi Gupta",
+    "username": "Abhi_01",
+    "mobile": "9911583188",
+    "email": "abhi@krmu.edu.in",
+    "password": "Abhi@12",
+    "role": "Faculty Administrator",
+    "mobile_verified": true,
+    "created_at": "2026-11-26T16:09:06.837252"
+  }
+]

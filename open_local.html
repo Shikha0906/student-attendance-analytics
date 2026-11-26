@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Attendance Analytics</title>
+<style>
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0f2f5;
+    margin: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+  }
+  .icon svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+  }
+  h1 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  p.subtitle {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 36px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  }
+  .btn:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+  }
+  .btn:active {
+    transform: translateY(0);
+  }
+  .info {
+    margin-top: 32px;
+    padding: 24px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-align: left;
+  }
+  .info h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .info ol {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-left: 20px;
+  }
+  .info code {
+    background: #e2e8f0;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+  }
+  .step {
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="icon">
+      <svg viewBox="0 0 24 24" fill="white">
+        <path d="M12 2L2 7l10 5 10-5L12 2zM2 17l10 5 10-5L2 17zm10 8L12 12l-10 5L2 7l10 5L12 17z"/>
+      </svg>
+    </div>
+    <h1>Student Attendance Analytics</h1>
+    <p class="subtitle">Click below to open the interactive web application</p>
+    <a href="http://localhost:5000" class="btn" target="_blank">🚀 Open Web Application</a>
+    <div class="info">
+      <h3>If the link doesn't open automatically:</h3>
+      <ol>
+        <li class="step">Open Command Prompt or Terminal</li>
+        <li class="step">Navigate to: <code>cd C:\Users\Shikha Sharma\.cline\data\workspaces\chat\student-attendance-analytics</code></li>
+        <li class="step">Run: <code>python web_app.py</code></li>
+        <li class="step">Then click the link above again</li>
+      </ol>
+    </div>
+  </div>
+</div>
+</body>
+</html>

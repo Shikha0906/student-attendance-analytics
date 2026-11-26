@@ -1,0 +1,122 @@
+[
+  {
+    "record_id": "fa05a7ce-e7fa-4e25-9cc8-cf85396c2c5a",
+    "student_id": "STU-bfade9e5",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-17",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.712067"
+  },
+  {
+    "record_id": "70b4fd87-ba26-4d5f-a183-f978ccf4e12f",
+    "student_id": "STU-43f978a7",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-17",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.713700"
+  },
+  {
+    "record_id": "ab6b6a45-aa7d-448d-b516-895497284b45",
+    "student_id": "STU-b45de38d",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-17",
+    "status": "absent",
+    "timestamp": "2026-11-25T18:17:34.715318"
+  },
+  {
+    "record_id": "e80403b9-3451-4ee8-b109-a510da9801e7",
+    "student_id": "STU-2ff9a901",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-17",
+    "status": "late",
+    "timestamp": "2026-11-25T18:17:34.716903"
+  },
+  {
+    "record_id": "c717ad95-c57e-48d2-9f03-5c41783577d5",
+    "student_id": "STU-bfade9e5",
+    "course_id": "CRS-51288b0f",
+    "date": "2026-11-17",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.718451"
+  },
+  {
+    "record_id": "8867aa89-2ae7-4cd1-869d-dbc1d9a4b3fb",
+    "student_id": "STU-43f978a7",
+    "course_id": "CRS-51288b0f",
+    "date": "2026-11-18",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.719796"
+  },
+  {
+    "record_id": "29aec932-62a4-48cb-88a2-ce2a911e6520",
+    "student_id": "STU-b45de38d",
+    "course_id": "CRS-51288b0f",
+    "date": "2026-11-18",
+    "status": "absent",
+    "timestamp": "2026-11-25T18:17:34.721159"
+  },
+  {
+    "record_id": "c008d057-f67a-4609-b086-9b967fc5b8d9",
+    "student_id": "STU-bfade9e5",
+    "course_id": "CRS-0885a760",
+    "date": "2026-11-18",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.722711"
+  },
+  {
+    "record_id": "79c60215-56fe-4d8f-a520-2dd7de81471d",
+    "student_id": "STU-43f978a7",
+    "course_id": "CRS-0885a760",
+    "date": "2026-11-18",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.724088"
+  },
+  {
+    "record_id": "f9606a4a-ecec-42c6-9300-aadd2dd8c625",
+    "student_id": "STU-b45de38d",
+    "course_id": "CRS-0885a760",
+    "date": "2026-11-18",
+    "status": "absent",
+    "timestamp": "2026-11-25T18:17:34.725373"
+  },
+  {
+    "record_id": "41748a6b-a547-4bcd-888f-c6a72fae89e9",
+    "student_id": "STU-2ff9a901",
+    "course_id": "CRS-0885a760",
+    "date": "2026-11-20",
+    "status": "absent",
+    "timestamp": "2026-11-25T18:17:34.726648"
+  },
+  {
+    "record_id": "f74bdb38-823c-42d8-acc4-ece3787f5743",
+    "student_id": "STU-bfade9e5",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-20",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.727913"
+  },
+  {
+    "record_id": "74611f39-2447-4130-bc09-c04b33578616",
+    "student_id": "STU-43f978a7",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-20",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.729455"
+  },
+  {
+    "record_id": "e65dfe8e-ddb9-4ada-a2ee-95255852a553",
+    "student_id": "STU-b45de38d",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-20",
+    "status": "present",
+    "timestamp": "2026-11-25T18:17:34.731102"
+  },
+  {
+    "record_id": "b9455844-6967-4ea6-99f7-53fce2f9b09d",
+    "student_id": "STU-2ff9a901",
+    "course_id": "CRS-c0a1cdd2",
+    "date": "2026-11-20",
+    "status": "late",
+    "timestamp": "2026-11-25T18:17:34.732754"
+  }
+]

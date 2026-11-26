@@ -1,0 +1,22 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch / Temporary files
+tmp_*
+temp_*
+*.log
+captions.xml
+yt_desc.txt

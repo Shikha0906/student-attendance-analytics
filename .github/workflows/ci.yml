@@ -1,0 +1,97 @@
+name: Student Attendance Analytics CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Lint with flake8
+        run: |
+          flake8 . --max-line-length=100
+      
+      - name: Test with pytest
+        run: |
+          python -m pytest --cov=.
+      
+      - name: Type check with mypy
+        run: |
+          mypy *.py
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Build Docker image
+        run: docker build -t student-attendance-analytics:latest .
+      
+      - name: Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: student-attendance-analytics
+      
+      - name: Push Docker image
+        uses: docker/push-action@v5
+        with:
+          images: student-attendance-analytics
+          tags: latest
+
+  terraform:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.5.7"
+      
+      - name: Initialize Terraform
+        run: terraform init
+      
+      - name: Terraform Format
+        run: terraform fmt --check -recursive
+      
+      - name: Terraform Validate
+        run: terraform validate
+      
+      - name: Terraform Plan
+        run: terraform plan -no-color
+
+  deploy:
+    needs: terraform
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy with Terraform
+        run: |
+          terraform apply -auto-approve \
+            -var="aws_region=${{ secrets.AWS_REGION }}" \
+            -var="azure_tenant_id=${{ secrets.AZURE_TENANT_ID }}" \
+            -var="azure_client_id=${{ secrets.AZURE_CLIENT_ID }}" \
+            -var="gcp_project=${{ secrets.GCP_PROJECT }}"

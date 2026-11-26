@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Analytics</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Student Attendance Analytics</h1>
+        <button class="theme-toggle" onclick="toggleDarkMode()" id="themeBtn">🌙</button>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/record">Record Attendance</a></li>
+            <li><a href="/analytics">Analytics</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <h2>Student Attendance Analytics</h2>
+            <p>Track and monitor student attendance with comprehensive analytics</p>
+            <div class="tabs" id="mainTabs">
+                <button class="tab active" onclick="showTab('daily')">Daily Total</button>
+                <button class="tab" onclick="showTab('rates')">Rates</button>
+                <button class="tab" onclick="showTab('aggregates')">Course Aggregates</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

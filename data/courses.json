@@ -1,0 +1,20 @@
+[
+  {
+    "course_id": "CRS-c0a1cdd2",
+    "name": "Introduction to Python",
+    "code": "CS101",
+    "created_at": "2026-11-25T18:17:34.707984"
+  },
+  {
+    "course_id": "CRS-51288b0f",
+    "name": "Data Structures",
+    "code": "CS201",
+    "created_at": "2026-11-25T18:17:34.709226"
+  },
+  {
+    "course_id": "CRS-0885a760",
+    "name": "Database Systems",
+    "code": "CS301",
+    "created_at": "2026-11-25T18:17:34.710352"
+  }
+]
